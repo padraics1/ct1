@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 // University of Limerick
-// Design: EE6621 rt2. Test bench focusing on the FSM.
-// Author: Karl Rinne
+// Design: EE6621 ct1. Test bench focusing on the FSM.
+// Author: Padraic Sheehan
 // Create Date: 23/06/2020
 // Design Name: generic
 // Revision: 1.0
@@ -195,7 +195,6 @@ module tb01_rt2;
         $strobe("Sim Info: Welcome to EE6621 RT2 (functional). Module %m. Starting simulation at time %0t.",$time);
     end
 
-    // Good practice: Set a hard-stop simulation time (in case simulation runs into no other $finish system call prior to this)
     initial begin
         #1_000_000_000      // define hard-stop time for simulation
         $strobe("Sim Info: Simulation hard-stopped at time %0t",$time);
