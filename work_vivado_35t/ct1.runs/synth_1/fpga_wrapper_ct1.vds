@@ -1,0 +1,630 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Dec 18 15:58:11 2020
+# Process ID: 16291
+# Current directory: /home/padraic/ee6621/fpga/labs/ct1/work_vivado_35t/ct1.runs/synth_1
+# Command line: vivado -log fpga_wrapper_ct1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_wrapper_ct1.tcl
+# Log file: /home/padraic/ee6621/fpga/labs/ct1/work_vivado_35t/ct1.runs/synth_1/fpga_wrapper_ct1.vds
+# Journal file: /home/padraic/ee6621/fpga/labs/ct1/work_vivado_35t/ct1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fpga_wrapper_ct1.tcl -notrace
+Command: synth_design -top fpga_wrapper_ct1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16318 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1816.504 ; gain = 200.684 ; free physical = 1130 ; free virtual = 2633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_wrapper_ct1' [/home/padraic/ee6621/fpga/labs/ct1/rtl/fpga_wrapper_ct1.v:20]
+INFO: [Synth 8-6157] synthesizing module 'clkgen_cmod_a7' [/home/padraic/ee6621/fpga/labs/ct1/rtl/clkgen_cmod_a7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/padraic/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/home/padraic/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [/home/padraic/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40060]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 50.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 83.333000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 3.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 30 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 50 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 60 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 120 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (2#1) [/home/padraic/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40060]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [/home/padraic/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1085]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (3#1) [/home/padraic/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1085]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen_cmod_a7' (4#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/clkgen_cmod_a7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ct1' [/home/padraic/ee6621/fpga/labs/ct1/rtl/ct1.v:20]
+	Parameter d7_space bound to: 8'b00000000 
+	Parameter d7_A bound to: 8'b01110111 
+	Parameter d7_C bound to: 8'b00111001 
+	Parameter d7_c bound to: 8'b01011000 
+	Parameter d7_d bound to: 8'b01011110 
+	Parameter d7_E bound to: 8'b01111001 
+	Parameter d7_F bound to: 8'b01110001 
+	Parameter d7_h bound to: 8'b01110100 
+	Parameter d7_I bound to: 8'b00110000 
+	Parameter d7_L bound to: 8'b00111000 
+	Parameter d7_r bound to: 8'b01010000 
+	Parameter d7_S bound to: 8'b01101101 
+	Parameter d7_t bound to: 8'b01111000 
+	Parameter d7_U bound to: 8'b00111110 
+	Parameter d7_y bound to: 8'b01101110 
+INFO: [Synth 8-6157] synthesizing module 'synchroniser_3s' [/home/padraic/ee6621/fpga/labs/ct1/rtl/synchroniser_3s.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'synchroniser_3s' (5#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/synchroniser_3s.v:20]
+INFO: [Synth 8-6157] synthesizing module 'counter_down_rld' [/home/padraic/ee6621/fpga/labs/ct1/rtl/counter_down_rld.v:20]
+	Parameter COUNT_MAX bound to: 99999 - type: integer 
+	Parameter COUNT_MAX_TURBOSIM bound to: 99 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_down_rld' (6#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/counter_down_rld.v:20]
+INFO: [Synth 8-6157] synthesizing module 'counter_down_rld__parameterized0' [/home/padraic/ee6621/fpga/labs/ct1/rtl/counter_down_rld.v:20]
+	Parameter COUNT_MAX bound to: 9999 - type: integer 
+	Parameter COUNT_MAX_TURBOSIM bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_down_rld__parameterized0' (6#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/counter_down_rld.v:20]
+INFO: [Synth 8-6157] synthesizing module 'counter_down_rld__parameterized1' [/home/padraic/ee6621/fpga/labs/ct1/rtl/counter_down_rld.v:20]
+	Parameter COUNT_MAX bound to: 99999999 - type: integer 
+	Parameter COUNT_MAX_TURBOSIM bound to: 99999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_down_rld__parameterized1' (6#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/counter_down_rld.v:20]
+INFO: [Synth 8-6157] synthesizing module 'display_7s_mux' [/home/padraic/ee6621/fpga/labs/ct1/rtl/display_7s_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'display_7s_mux' (7#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/display_7s_mux.v:20]
+INFO: [Synth 8-6157] synthesizing module 'display_7s' [/home/padraic/ee6621/fpga/labs/ct1/rtl/display_7s.v:20]
+	Parameter PRESCALER_RLD bound to: 99999 - type: integer 
+	Parameter PRESCALER_RLD_TURBOSIM bound to: 9 - type: integer 
+	Parameter BLINK_RLD bound to: 499 - type: integer 
+	Parameter BLINK_RLD_TURBOSIM bound to: 19 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/padraic/ee6621/fpga/labs/ct1/rtl/display_7s.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'display_7s' (8#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/display_7s.v:20]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [/home/padraic/ee6621/fpga/labs/ct1/rtl/debounce.v:20]
+	Parameter DEBOUNCE_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (9#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/debounce.v:20]
+INFO: [Synth 8-6157] synthesizing module 'buzzer' [/home/padraic/ee6621/fpga/labs/ct1/rtl/buzzer.v:20]
+	Parameter BUZZER_RLD bound to: 31249 - type: integer 
+	Parameter BUZZER_RLD_TURBOSIM bound to: 24 - type: integer 
+	Parameter BUZZER_DUR bound to: 639 - type: integer 
+	Parameter BUZZER_DUR_TURBOSIM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'buzzer' (10#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/buzzer.v:20]
+INFO: [Synth 8-6157] synthesizing module 'bcd_counter_4d' [/home/padraic/ee6621/fpga/labs/ct1/rtl/bcd_counter_4d.v:20]
+INFO: [Synth 8-6157] synthesizing module 'bcd_counter_digit' [/home/padraic/ee6621/fpga/labs/ct1/rtl/bcd_counter_digit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_counter_digit' (11#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/bcd_counter_digit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_counter_4d' (12#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/bcd_counter_4d.v:20]
+INFO: [Synth 8-6157] synthesizing module 'fsm_game' [/home/padraic/ee6621/fpga/labs/ct1/rtl/fsm_game.v:20]
+	Parameter WAIT_2_SECONDS bound to: 2000 - type: integer 
+	Parameter WAIT_VLONG bound to: 3999 - type: integer 
+	Parameter WAIT_LONG bound to: 1999 - type: integer 
+	Parameter WAIT_MEDIUM bound to: 999 - type: integer 
+	Parameter WAIT_SHORT bound to: 199 - type: integer 
+	Parameter RND_MIN bound to: 200 - type: integer 
+	Parameter RND_MAX bound to: 2999 - type: integer 
+	Parameter S_NOB bound to: 4 - type: integer 
+	Parameter S_SHOW_UL bound to: 0 - type: integer 
+	Parameter S_SHOW_ECE bound to: 1 - type: integer 
+	Parameter S_SHOW_MODULE bound to: 2 - type: integer 
+	Parameter S_SHOW_DESIGN bound to: 3 - type: integer 
+	Parameter S_SHOW_ID bound to: 4 - type: integer 
+	Parameter S_STOP bound to: 5 - type: integer 
+	Parameter S_COUNT bound to: 6 - type: integer 
+	Parameter S_ALARM bound to: 7 - type: integer 
+	Parameter S_RESET bound to: 15 - type: integer 
+	Parameter D_UL bound to: 0 - type: integer 
+	Parameter D_ECE bound to: 1 - type: integer 
+	Parameter D_MODULE bound to: 2 - type: integer 
+	Parameter D_LAB bound to: 3 - type: integer 
+	Parameter D_ID bound to: 4 - type: integer 
+	Parameter D_BCD bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element button_logged_reg was removed.  [/home/padraic/ee6621/fpga/labs/ct1/rtl/fsm_game.v:116]
+WARNING: [Synth 8-6014] Unused sequential element button_prev_reg was removed.  [/home/padraic/ee6621/fpga/labs/ct1/rtl/fsm_game.v:120]
+WARNING: [Synth 8-6014] Unused sequential element rnd_counter_reg was removed.  [/home/padraic/ee6621/fpga/labs/ct1/rtl/fsm_game.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_game' (13#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/fsm_game.v:20]
+WARNING: [Synth 8-3848] Net d7_content7 in module/entity ct1 does not have driver. [/home/padraic/ee6621/fpga/labs/ct1/rtl/ct1.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'ct1' (14#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/ct1.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_wrapper_ct1' (15#1) [/home/padraic/ee6621/fpga/labs/ct1/rtl/fpga_wrapper_ct1.v:20]
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led0_b driven by constant 1
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led0_g driven by constant 1
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led0_r driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1879.254 ; gain = 263.434 ; free physical = 1162 ; free virtual = 2666
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1882.223 ; gain = 266.402 ; free physical = 1158 ; free virtual = 2662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1882.223 ; gain = 266.402 ; free physical = 1158 ; free virtual = 2662
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1886.191 ; gain = 0.000 ; free physical = 1150 ; free virtual = 2654
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_100MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_10MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_12MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_200MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_20MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_50MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_5MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/padraic/ee6621/fpga/labs/ct1/xdc/cmod-a7-config.xdc]
+Finished Parsing XDC File [/home/padraic/ee6621/fpga/labs/ct1/xdc/cmod-a7-config.xdc]
+Parsing XDC File [/home/padraic/ee6621/fpga/labs/ct1/xdc/rt2.xdc]
+Finished Parsing XDC File [/home/padraic/ee6621/fpga/labs/ct1/xdc/rt2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/padraic/ee6621/fpga/labs/ct1/xdc/rt2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_wrapper_ct1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_wrapper_ct1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.988 ; gain = 0.000 ; free physical = 1072 ; free virtual = 2574
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  BUFGCE => BUFGCTRL: 7 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.988 ; gain = 0.000 ; free physical = 1072 ; free virtual = 2574
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 1135 ; free virtual = 2638
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 1135 ; free virtual = 2638
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 1135 ; free virtual = 2638
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/padraic/ee6621/fpga/labs/ct1/rtl/debounce.v:46]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_game'
+INFO: [Synth 8-5544] ROM "counter_clr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "beep" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dis_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 S_RESET |                        000000001 |                             1111
+               S_SHOW_UL |                        000000010 |                             0000
+              S_SHOW_ECE |                        000000100 |                             0001
+           S_SHOW_MODULE |                        000001000 |                             0010
+           S_SHOW_DESIGN |                        000010000 |                             0011
+               S_SHOW_ID |                        000100000 |                             0100
+                  S_STOP |                        001000000 |                             0101
+                 S_COUNT |                        010000000 |                             0110
+                 S_ALARM |                        100000000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_game'
+WARNING: [Synth 8-327] inferring latch for variable 'counter_clr_reg' [/home/padraic/ee6621/fpga/labs/ct1/rtl/fsm_game.v:151]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 1126 ; free virtual = 2630
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   3 Input     27 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 2     
+	   3 Input     17 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 20    
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 38    
+	   9 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module synchroniser_3s 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module counter_down_rld 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+Module counter_down_rld__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+Module counter_down_rld__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   3 Input     27 Bit        Muxes := 1     
+Module display_7s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     17 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module buzzer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 3     
+	   3 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module bcd_counter_digit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 7     
+Module fsm_game 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led0_b driven by constant 1
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led0_g driven by constant 1
+WARNING: [Synth 8-3917] design fpga_wrapper_ct1 has port led0_r driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 1113 ; free virtual = 2619
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 992 ; free virtual = 2499
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 986 ; free virtual = 2492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name      | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fpga_wrapper_ct1 | ct1/synchroniser_3s_reset/sr_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-----------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFGCE      |     7|
+|2     |CARRY4      |    26|
+|3     |LUT1        |   100|
+|4     |LUT2        |    64|
+|5     |LUT3        |    29|
+|6     |LUT4        |    42|
+|7     |LUT5        |    23|
+|8     |LUT6        |    74|
+|9     |MMCME2_BASE |     1|
+|10    |MUXF7       |     8|
+|11    |MUXF8       |     4|
+|12    |SRL16E      |     1|
+|13    |FDRE        |   146|
+|14    |FDSE        |    17|
+|15    |LD          |     1|
+|16    |IBUF        |     3|
+|17    |OBUF        |    23|
++------+------------+------+
+
+Report Instance Areas: 
++------+--------------------------+---------------------------------+------+
+|      |Instance                  |Module                           |Cells |
++------+--------------------------+---------------------------------+------+
+|1     |top                       |                                 |   569|
+|2     |  clkgen_cmod_a7          |clkgen_cmod_a7                   |     9|
+|3     |  ct1                     |ct1                              |   535|
+|4     |    bcd_counter_4d        |bcd_counter_4d                   |    47|
+|5     |      bcd0                |bcd_counter_digit                |    13|
+|6     |      bcd1                |bcd_counter_digit_0              |    13|
+|7     |      bcd2                |bcd_counter_digit_1              |    12|
+|8     |      bcd3                |bcd_counter_digit_2              |     9|
+|9     |    buzzer                |buzzer                           |    88|
+|10    |    counter_100us         |counter_down_rld__parameterized0 |    44|
+|11    |    counter_1ms           |counter_down_rld                 |    54|
+|12    |    counter_1s            |counter_down_rld__parameterized1 |    83|
+|13    |    debounce_l            |debounce                         |    13|
+|14    |    display_7s            |display_7s                       |    97|
+|15    |    fsm_game              |fsm_game                         |   105|
+|16    |    synchroniser_3s_reset |synchroniser_3s                  |     4|
++------+--------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.988 ; gain = 392.168 ; free physical = 984 ; free virtual = 2491
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 2007.988 ; gain = 266.402 ; free physical = 1039 ; free virtual = 2545
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 2007.996 ; gain = 392.168 ; free physical = 1039 ; free virtual = 2545
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.996 ; gain = 0.000 ; free physical = 1106 ; free virtual = 2613
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_100MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_10MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_12MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_200MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_20MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_50MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'clkgen_cmod_a7/BUFGCE_5MHz' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.996 ; gain = 0.000 ; free physical = 1051 ; free virtual = 2558
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  BUFGCE => BUFGCTRL: 7 instances
+  LD => LDCE: 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2007.996 ; gain = 538.523 ; free physical = 1183 ; free virtual = 2690
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.996 ; gain = 0.000 ; free physical = 1183 ; free virtual = 2690
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/padraic/ee6621/fpga/labs/ct1/work_vivado_35t/ct1.runs/synth_1/fpga_wrapper_ct1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_wrapper_ct1_utilization_synth.rpt -pb fpga_wrapper_ct1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 18 15:59:06 2020...
